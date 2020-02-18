@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="Bull's Eye" FontFamily="Algerian" FontSize="48" Foreground="Black"
+                   HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="75" />
+        <Button x:Name="PlayButton" Grid.Row="1" Width="200" Height="60"
+                Content="שחק" FontSize="24" FontWeight="Bold" Click="PlayButton_Click" FontFamily="Agency FB"/>
+        <Button x:Name="howToPlayButton" Grid.Row="2" Width="200" Height="60" Content="הוראות" FontSize="24" FontWeight="Bold"/>
+
     </Grid>
 </Window>
