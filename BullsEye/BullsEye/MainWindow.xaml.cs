@@ -31,5 +31,19 @@ namespace BullsEye
             gw.Show();
             this.Close();
         }
+
+        private void howToPlayButton_Click(object sender, RoutedEventArgs e)
+        {
+            HowToPlayWindow htp = new HowToPlayWindow();
+            htp.Show();
+            this.Close();
+        }
+
+        private void levalsButoon_Click(object sender, RoutedEventArgs e)
+        {
+            LevelSelectionWindow ls = new LevelSelectionWindow();
+            ls.Show();
+            this.Close();
+        }
     }
 }

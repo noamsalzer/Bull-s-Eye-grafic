@@ -17,7 +17,10 @@
                    HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="75" />
         <Button x:Name="PlayButton" Grid.Row="1" Width="200" Height="60"
                 Content="שחק" FontSize="24" FontWeight="Bold" Click="PlayButton_Click" FontFamily="Agency FB"/>
-        <Button x:Name="howToPlayButton" Grid.Row="2" Width="200" Height="60" Content="הוראות" FontSize="24" FontWeight="Bold"/>
+        <Button x:Name="howToPlayButton" Grid.Row="2" Width="200" Height="60" 
+                Content="הוראות" FontSize="24" FontWeight="Bold" Click="howToPlayButton_Click"/>
+        <Button x:Name="levalsButoon" Grid.Row="3" Width="200" Height="60" 
+                Content="בחירת רמה" FontSize="24" FontWeight="Bold" Click="levalsButoon_Click" />
 
     </Grid>
 </Window>

@@ -1,0 +1,31 @@
+﻿<Window x:Class="BullsEye.HowToPlayWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BullsEye"
+        mc:Ignorable="d"
+        Title="HowToPlayWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="7*"/>
+
+
+        </Grid.RowDefinitions>
+        <Button x:Name="CameBeck" Grid.Row="0" Width="75" Height="50" HorizontalAlignment="Right" Content="חזור"
+                Click="CameBeck_Click" FontSize="24" FontWeight="Bold"/>
+        <TextBlock Grid.Row="1" Text="הוראות " FontSize="24" TextDecorations="Underline"
+                   FontWeight="Bold" HorizontalAlignment="Center"/>
+        <TextBlock Grid.Row="2" Text=" מטרת המשחק היא לנחש את רצף של ארבעה צבעים שהמחשב בחר מתוך שישה צבעים אפשריים " Width="751" Height="35" FontSize="16" FontWeight="Bold" HorizontalAlignment="Right"/>
+        <TextBlock Grid.Row="3" Text="מהלך המשחק מתנהל כאשר על המשתתף לנסות למצוא את הרצף על ידי ניחושים  ובכול תור עליו לנחש" Width="751" Height="35" FontSize="16" FontWeight="Bold" HorizontalAlignment="Right"/>
+
+        <TextBlock Grid.Row="4" Text="   את ארבעת הצבעים ובכל סיבוב יהיה כתוב אחרי הניחוש אם הצליח לפגוע בול או שפגע בצבע אך לא במקום הנכון" Width="751" Height="35" FontSize="16" FontWeight="Bold" HorizontalAlignment="Right"/>
+
+
+    </Grid>
+</Window>
