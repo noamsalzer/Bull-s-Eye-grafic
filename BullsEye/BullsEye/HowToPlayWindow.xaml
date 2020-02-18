@@ -8,12 +8,12 @@
         Title="HowToPlayWindow" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
+            <!--<RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="7*"/>
+            <RowDefinition Height="7*"/>-->
 
 
         </Grid.RowDefinitions>
@@ -21,11 +21,11 @@
                 Click="CameBeck_Click" FontSize="24" FontWeight="Bold"/>
         <TextBlock Grid.Row="1" Text="הוראות " FontSize="24" TextDecorations="Underline"
                    FontWeight="Bold" HorizontalAlignment="Center"/>
-        <TextBlock Grid.Row="2" Text=" מטרת המשחק היא לנחש את רצף של ארבעה צבעים שהמחשב בחר מתוך שישה צבעים אפשריים " Width="751" Height="35" FontSize="16" FontWeight="Bold" HorizontalAlignment="Right"/>
-        <TextBlock Grid.Row="3" Text="מהלך המשחק מתנהל כאשר על המשתתף לנסות למצוא את הרצף על ידי ניחושים  ובכול תור עליו לנחש" Width="751" Height="35" FontSize="16" FontWeight="Bold" HorizontalAlignment="Right"/>
+        <TextBlock Grid.Row="2" Text=" מטרת המשחק היא לנחש את רצף של ארבעה צבעים שהמחשב בחר מתוך שישה צבעים אפשריים 
+                   מהלך המשחק מתנהל כאשר על המשתתף לנסות למצוא את הרצף על ידי ניחושים  ובכול תור עליו לנחש את ארבעת הצבעים ובכל סיבוב יהיה כתוב אחרי הניחוש אם הצליח לפגוע בול או שפגע בצבע אך לא במקום הנכון"
+                   FontSize="16" FontWeight="Bold" TextWrapping="Wrap" HorizontalAlignment="Right"/>
 
-        <TextBlock Grid.Row="4" Text="   את ארבעת הצבעים ובכל סיבוב יהיה כתוב אחרי הניחוש אם הצליח לפגוע בול או שפגע בצבע אך לא במקום הנכון" Width="751" Height="35" FontSize="16" FontWeight="Bold" HorizontalAlignment="Right"/>
-
+        
 
     </Grid>
 </Window>
