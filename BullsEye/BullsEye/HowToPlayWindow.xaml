@@ -11,21 +11,20 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
-            <!--<RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="7*"/>-->
-
-
         </Grid.RowDefinitions>
+        
         <Button x:Name="CameBeck" Grid.Row="0" Width="75" Height="50" HorizontalAlignment="Right" Content="חזור"
                 Click="CameBeck_Click" FontSize="24" FontWeight="Bold"/>
-        <TextBlock Grid.Row="1" Text="הוראות " FontSize="24" TextDecorations="Underline"
-                   FontWeight="Bold" HorizontalAlignment="Center"/>
-        <TextBlock Grid.Row="2" Text=" מטרת המשחק היא לנחש את רצף של ארבעה צבעים שהמחשב בחר מתוך שישה צבעים אפשריים 
-                   מהלך המשחק מתנהל כאשר על המשתתף לנסות למצוא את הרצף על ידי ניחושים  ובכול תור עליו לנחש את ארבעת הצבעים ובכל סיבוב יהיה כתוב אחרי הניחוש אם הצליח לפגוע בול או שפגע בצבע אך לא במקום הנכון"
-                   FontSize="16" FontWeight="Bold" TextWrapping="Wrap" HorizontalAlignment="Right"/>
-
         
+        <TextBlock Grid.Row="1" Text="הוראות" FontSize="24" TextDecorations="Underline"
+                   FontWeight="Bold" HorizontalAlignment="Center"/>
+
+        <TextBlock Grid.Row="2" Text="מטרת המשחק היא לנחש את רצף של ארבעה צבעים שהמחשב בחר מתוך שישה צבעים אפשריים  מהלך המשחק הוא על המשתתף לנסות למצוא את הרצף על ידי ניחושים  ובכול תור עליו לנחש את ארבעת הצבעים ובכל סיבוב יהיה כתוב אחרי הניחוש אם הצליח לפגוע בול או שפגע בצבע אך לא במקום הנכון"
+                   FontSize="16" FontWeight="Bold" TextWrapping="Wrap" HorizontalAlignment="Right"
+                   FlowDirection="RightToLeft" TextAlignment="Justify" Margin="50" />
+
+
+
 
     </Grid>
 </Window>
