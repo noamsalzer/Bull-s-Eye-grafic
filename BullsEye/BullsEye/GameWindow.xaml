@@ -8,19 +8,23 @@
         Title="GameWindow" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="150"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="150"/>
         </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.Column="1" Background="AliceBlue" Name="MyBoard"/>
+        <ScrollViewer Grid.Column="1">
+            <StackPanel Background="AliceBlue" Name="MyBoard"/>
+        </ScrollViewer>
         <StackPanel Grid.Column="2" Background="AliceBlue" Name="buttons"/>
 
-        <Button  Grid.Column = "2" Width="90" Height="40" Background="Yellow" VerticalAlignment="Top" Margin="0,25,0,0"
-                Content="yellow" FontSize="30" FontWeight="Thin"  FontFamily="Agency FB"/>
-        
-        <Button  Grid.Column = "2" Width="90" Height="40" Background="LawnGreen" VerticalAlignment="Top" Margin="0,90,0,0"
-                Content="green" FontSize="30" FontWeight="Thin"  FontFamily="Agency FB"/>
+        <Button Grid.Column = "2" Width="90" Height="40" Background="Yellow" VerticalAlignment="Top" Margin="0,25,0,0"
+                Content="yellow" FontSize="30" FontWeight="Thin"  FontFamily="Agency FB"
+                Name="Yellow" Click="Yellow_Click"/>
+
+        <Button Grid.Column = "2" Width="90" Height="40" Background="LawnGreen" VerticalAlignment="Top" Margin="0,90,0,0"
+                Content="green" FontSize="30" FontWeight="Thin"  FontFamily="Agency FB"
+                Name="Green" Click="Green_Click" />
 
         <Button  Grid.Column = "2" Width="90" Height="40" Background="Red" VerticalAlignment="Top" Margin="0,155,0,0"
                 Content="red" FontSize="30" FontWeight="Thin"  FontFamily="Agency FB"/>
@@ -33,6 +37,6 @@
 
         <Button  Grid.Column = "2" Width="90" Height="40" Background="Orange" VerticalAlignment="Top" Margin="0,350,0,0"
                 Content="orange" FontSize="30" FontWeight="Thin"  FontFamily="Agency FB"/>
-        
+
     </Grid>
 </Window>
