@@ -7,6 +7,26 @@
         mc:Ignorable="d"
         Title="LevelSelectionWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="!!בחירת הרמה" FontSize="55" TextDecorations="Underline"
+                   FontWeight="Bold" HorizontalAlignment="Center"/>
+
+        <Button  x:Name="EasyLevel" Grid.Row="1" Width="240" Height="100" HorizontalAlignment="Right" Content="רמה קלה"
+                Click="EasyLevel_Click" FontSize="40" FontWeight="Bold" Margin="0,42,82,204"/>
+
+        <Button  x:Name="MediumLevel" Grid.Row="1" Width="240" Height="100" HorizontalAlignment="Right" Content="רמה בינונית"
+                Click="MediumLevel_Click" FontSize="40" FontWeight="Bold" Margin="0,42,450,204"/>
+
+        <Button  x:Name="HardLevel" Grid.Row="1" Width="240" Height="100" HorizontalAlignment="Right" Content="רמה קשה"
+                Click="HardLevel_Click" FontSize="40" FontWeight="Bold" Margin="0,191,82,55"/>
+
+        <Button  x:Name="RandomLevel" Grid.Row="1" Width="240" Height="100" HorizontalAlignment="Right" Content="רמה אקראית"
+                Click="RandomLevel_Click" FontSize="40" FontWeight="Bold" Margin="0,191,450,55"/>
+
+
+
     </Grid>
 </Window>

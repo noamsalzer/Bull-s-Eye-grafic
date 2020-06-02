@@ -20,6 +20,8 @@ namespace BullsEye
     public partial class GameWindow : Window
     {
         int currRaw = 0;
+        string[] code = { "Green", "Blue", "Red", "Pink" }
+
 
         public GameWindow()
         {
@@ -40,7 +42,7 @@ namespace BullsEye
                 color.Content = color.Name;
                 color.Margin = new Thickness(20);
                 myVertical.Children.Add(color);
-            }    
+            }
         }
 
         private void BuildFirstRaw()
@@ -51,7 +53,7 @@ namespace BullsEye
             for (int i = 0; i < 4; i++)
             {
                 Ellipse eli = new Ellipse();
-                eli.Name = "eli" + (i+1);
+                eli.Name = "eli" + (i + 1);
                 eli.Width = 30;
                 eli.Height = 30;
                 eli.MouseDown += ChoseColorClick;
@@ -91,15 +93,36 @@ namespace BullsEye
             return checkIt;
         }
 
-        
+
         private void CheckIt_Click(object sender, RoutedEventArgs e)
         {
-            
+            int bol = 0, mis = 0;
+            MessageBox.Show("you have:\n" + bol + " - bools.\n" + mis + " - misses.");
+            StackPanel s = (StackPanel)MyBoard.Children[currRaw];
+            for (int i = 0; i < 4; i++)
+            {
+                Ellipse el = (Ellipse)s.Children[i];
+                if (el.Name == code[i])
+                {
+                    bol++;
+                }
+                else
+                {
+                    for (int k = 0; k < 4; k++)
+                    {
+                        if (k != i && el.Name == code[k])
+                        {
+                            mis++;
+                        }
+                    }
+                }
+            }
+            MessageBox.Show("you have:\n" + bol + " - bools.\n" + mis + " - misses.");
         }
 
         private void ChoseColorClick(object sender, MouseButtonEventArgs e)
         {
-            
+
         }
 
         private void Yellow_Click(object sender, RoutedEventArgs e)
@@ -112,6 +135,7 @@ namespace BullsEye
                 {
                     el.Fill = Brushes.Yellow;
                     Yellow.IsEnabled = false;
+                    el.Name = "Yellow";
                     break;
                 }
             }
@@ -125,8 +149,72 @@ namespace BullsEye
                 Ellipse el = (Ellipse)s.Children[i];
                 if (el.Fill == Brushes.Gray)
                 {
-                    el.Fill = Brushes.Green;
+                    el.Fill = Brushes.LawnGreen;
                     Green.IsEnabled = false;
+                    el.Name = "Green";
+                    break;
+                }
+            }
+        }
+        private void Red_Click(object sender, RoutedEventArgs e)
+        {
+            StackPanel s = (StackPanel)MyBoard.Children[currRaw];
+            for (int i = 0; i < 4; i++)
+            {
+                Ellipse el = (Ellipse)s.Children[i];
+                if (el.Fill == Brushes.Gray)
+                {
+                    el.Fill = Brushes.Red;
+                    el.Name = "Red";
+                    Red.IsEnabled = false;
+                    break;
+                }
+            }
+        }
+        private void Blue_Click(object sender, RoutedEventArgs e)
+        {
+            StackPanel s = (StackPanel)MyBoard.Children[currRaw];
+            for (int i = 0; i < 4; i++)
+            {
+                Ellipse el = (Ellipse)s.Children[i];
+                if (el.Fill == Brushes.Gray)
+                {
+                    el.Fill = Brushes.Blue;
+                    Blue.IsEnabled = false;
+                    el.Name = "Blue";
+
+                    break;
+                }
+            }
+        }
+        private void Pink_Click(object sender, RoutedEventArgs e)
+        {
+            StackPanel s = (StackPanel)MyBoard.Children[currRaw];
+            for (int i = 0; i < 4; i++)
+            {
+                Ellipse el = (Ellipse)s.Children[i];
+                if (el.Fill == Brushes.Gray)
+                {
+                    el.Fill = Brushes.HotPink;
+                    Pink.IsEnabled = false;
+                    el.Name = "Pink";
+
+                    break;
+                }
+            }
+        }
+        private void Orange_Click(object sender, RoutedEventArgs e)
+        {
+            StackPanel s = (StackPanel)MyBoard.Children[currRaw];
+            for (int i = 0; i < 4; i++)
+            {
+                Ellipse el = (Ellipse)s.Children[i];
+                if (el.Fill == Brushes.Gray)
+                {
+                    el.Fill = Brushes.Orange;
+                    Orange.IsEnabled = false;
+                    el.Name = "Orange";
+
                     break;
                 }
             }

@@ -27,16 +27,20 @@
                 Name="Green" Click="Green_Click" />
 
         <Button  Grid.Column = "2" Width="90" Height="40" Background="Red" VerticalAlignment="Top" Margin="0,155,0,0"
-                Content="red" FontSize="30" FontWeight="Thin"  FontFamily="Agency FB"/>
+                Content="red" FontSize="30" FontWeight="Thin"  FontFamily="Agency FB"
+                  Name="Red" Click="Red_Click" />
 
         <Button  Grid.Column = "2" Width="90" Height="40" Background="Blue" VerticalAlignment="Top" Margin="0,220,0,0"
-                Content="blue" FontSize="30" FontWeight="Thin"  FontFamily="Agency FB"/>
+                Content="blue" FontSize="30" FontWeight="Thin"  FontFamily="Agency FB"
+                  Name="Blue" Click="Blue_Click"/>
 
         <Button  Grid.Column = "2" Width="90" Height="40" Background="HotPink" VerticalAlignment="Top" Margin="0,285,0,0"
-                Content="pink" FontSize="30" FontWeight="Thin"  FontFamily="Agency FB"/>
+                Content="pink" FontSize="30" FontWeight="Thin"  FontFamily="Agency FB"
+                  Name="Pink" Click="Pink_Click"/>
 
         <Button  Grid.Column = "2" Width="90" Height="40" Background="Orange" VerticalAlignment="Top" Margin="0,350,0,0"
-                Content="orange" FontSize="30" FontWeight="Thin"  FontFamily="Agency FB"/>
+                Content="orange" FontSize="30" FontWeight="Thin"  FontFamily="Agency FB"
+                   Name="Orange" Click="Orange_Click"/>
 
     </Grid>
 </Window>
